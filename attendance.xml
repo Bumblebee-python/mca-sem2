@@ -1,20 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="sir.xsl"?>
-<ChristUniversity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:noNamespaceSchemaLocation="sir.xsd">
-  <Faculty>
-    <Name>Rithul</Name>
-    <Age>22</Age>
-    <Salary>20000</Salary>
-  </Faculty>
-  <Faculty>
-    <Name>Indu</Name>
-    <Age>33</Age>
-    <Salary>25000</Salary>
-  </Faculty>
-  <Faculty>
-    <Name>Kevin</Name>
-    <Age>32</Age>
-    <Salary>26000</Salary>
-  </Faculty>
-</ChristUniversity>
+<?xml-stylesheet type="text/xsl" href="attendance.xsl"?>
+<PMS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="attendance.xsd">
+  <Emp_Details>
+    <Emp_ID>e201</Emp_ID>
+    <Name>Yash</Name>
+    <Contact>8891346522</Contact>
+    <Dept_name>Mechanical</Dept_name>
+    <Gender>F</Gender>
+  </Emp_Details>
+  <Emp_Details>
+  	<Emp_ID>e202</Emp_ID>
+    <Name>Rohit</Name>
+    <Contact>8883746522</Contact>
+    <Dept_name>Mechanical</Dept_name>
+    <Gender>F</Gender>
+  </Emp_Details>
+  <Emp_Details>
+  	<Emp_ID>e203</Emp_ID>
+    <Name>Manish</Name>
+    <Contact>8891341029</Contact>
+    <Dept_name>Mechanical</Dept_name>
+    <Gender>M</Gender>
+  </Emp_Details>
+  
+  <Job_Title>
+  	<Job_ID>jd201</Job_ID>
+  	<Job_title>Team Leader</Job_title>
+	<Dept_ID>did201</Dept_ID>  	
+  </Job_Title>
+  <Job_Title>
+  	<Job_ID>jd202</Job_ID>
+  	<Job_title>Recruiter</Job_title>
+	<Dept_ID>did203</Dept_ID>  	
+  </Job_Title>
+   <Job_Title>
+  	<Job_ID>jd203</Job_ID>
+  	<Job_title>Coder</Job_title>
+	<Dept_ID>did202</Dept_ID>  	
+  </Job_Title>
+  	
+  	<Department>
+  	<Dept_ID>did201</Dept_ID>
+  	<Dept_name>Technical</Dept_name> 	
+  </Department>
+    <Department>
+	<Dept_ID>did202</Dept_ID>
+  	<Dept_name>Technical</Job_title>  	
+  </Department>
+  <Department>
+	<Dept_ID>did203</Dept_ID>
+  	<Dept_name>Maintenance</Dept_name>  	
+  </Department>
+  
+  
+  <Duty_Duration>
+  	<Duty_ID>dd201</Duty_ID>
+  	<Emp_ID>e201</Emp_ID>
+  	<Date>2021-12-20</Date>
+	<Job_ID>jd201</Job_ID>  	
+  </Duty_Duration>
+  <Duty_Duration>
+  	<Duty_ID>dd201</Duty_ID>
+  	<Emp_ID>e201</Emp_ID>
+  	<Date>2021-12-24</Date>
+	<Job_ID>jd201</Job_ID>  	
+  </Duty_Duration>
+   <Duty_Duration>
+  	<Duty_ID>dd201</Duty_ID>
+  	<Emp_ID>e201</Emp_ID>
+  	<Date>2021-12-21</Date>
+	<Job_ID>jd201</Job_ID>  	
+  </Duty_Duration>
+  
+  
+  
+  
+  
+  
+  
+</PMS>
+
