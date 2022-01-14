@@ -3,24 +3,74 @@
 <xs:element name="PMS">
 <xs:complexType>
 <xs:sequence>
-<xs:element name="Employee" maxOccurs="unbounded">
+<xs:element name="Emp_Details" maxOccurs="unbounded">
 <xs:complexType>
 <xs:sequence>
-<xs:element name="Emp_Id" type="xs:string"></xs:element>
-<xs:element name="Emp_Name" type="xs:string"></xs:element>
-<xs:element name="Emp_Conatct" type="xs:integer"></xs:element>
-<xs:element name="Age" type="xs:integer"></xs:element>
-<xs:element name="Salary" type="MySal"></xs:element>
+<xs:element name="Emp_ID" type="xs:ID"></xs:element>
+<xs:element name="Name" type="xs:string"></xs:element>
+<xs:element name="Contact" type="xs:decimal"></xs:element>
+<xs:element name="Dept_name" type="xs:string"></xs:element>
+<xs:element name="Gender" type="xs:string"></xs:element>
 </xs:sequence>
 </xs:complexType>
 </xs:element>
 </xs:sequence>
 </xs:complexType>
 </xs:element>
-<xs:simpleType name="MySal">
-<xs:restriction base="xs:integer">
-<xs:minInclusive value="10000"></xs:minInclusive>
-<xs:maxInclusive value="100000"></xs:maxInclusive>
-</xs:restriction>
-</xs:simpleType>
 </xs:schema>
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="PMS">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Job_Title" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Job_ID" type="xs:ID"></xs:element>
+<xs:element name="Job_title" type="xs:string"></xs:element>
+<xs:element name="Dept_ID" type="xs:ID"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="PMS">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Department" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Dept_ID" type="xs:ID"></xs:element>
+<xs:element name="Dept_name" type="xs:string"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="PMS">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Duty_Duration" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="Duty_ID" type="xs:ID"></xs:element>
+<xs:element name="Emp_ID" type="xs:ID"></xs:element>
+<xs:element name="Date" type="xs:date"></xs:element>
+<xs:element name="Job_ID" type="xs:ID"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+
